@@ -28,6 +28,13 @@ class Vector2 {
 class Movable {
  public:
   Movable();
+ protected:
+  Vector2 center;
+  float rotation;
+  Vector2 lin_speed;
+  float rot_speed;
+  Vector2 lin_accel;
+  float rot_accel;
 };
 
 class Rect : public Movable {
